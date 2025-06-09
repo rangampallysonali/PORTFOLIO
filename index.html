@@ -2,39 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevOps Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Portfolio - [Your Name]</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f7fa;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #1f3b73;
-      color: white;
-      padding: 2rem;
+      background: #0f172a;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
     }
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 0 1rem;
     }
     h2 {
-      color: #1f3b73;
+      color: #0f172a;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
     }
-    .project, .certification {
-      background: white;
+    ul {
+      padding-left: 1.2rem;
+    }
+    .card {
+      background: #fff;
       padding: 1rem;
       margin: 1rem 0;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
     a {
-      color: #1f3b73;
+      color: #2563eb;
       text-decoration: none;
     }
     a:hover {
@@ -42,63 +50,79 @@
     }
     footer {
       text-align: center;
-      padding: 2rem;
-      background-color: #1f3b73;
-      color: white;
+      padding: 2rem 1rem;
+      background: #0f172a;
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm [Your Name] 👋</h1>
-    <p><strong>🚀 Aspiring DevOps Engineer</strong> | Passionate about ⚙️ Automation, 🛠️ CI/CD & ☁️ Cloud</p>
-    <p>📍 Location | 📧 email@example.com | <a href="#">🔗 LinkedIn</a> • <a href="#">🐙 GitHub</a> • <a href="#">📄 Resume</a></p>
-  </header>
 
-  <section>
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li><strong>DevOps Tools:</strong> Git, Jenkins, Docker 🐳, Kubernetes ☸️, Ansible, Terraform</li>
-      <li><strong>Cloud:</strong> AWS ☁️, Azure, GCP</li>
-      <li><strong>Languages:</strong> Bash 🐚, Python 🐍, YAML</li>
-      <li><strong>Monitoring:</strong> Prometheus 📊, Grafana 📈, ELK Stack</li>
-    </ul>
-  </section>
+<header>
+  <h1>Hi, I'm [Your Name] 👋</h1>
+  <p>🚀 Aspiring DevOps Engineer | Passionate about automation, CI/CD, and cloud infrastructure</p>
+  <p>📍 City, Country | 📧 email@example.com | 
+    <a href="#" style="color:#60a5fa;">LinkedIn</a> • 
+    <a href="#" style="color:#60a5fa;">GitHub</a> • 
+    <a href="#" style="color:#60a5fa;">Resume</a>
+  </p>
+</header>
 
-  <section>
-    <h2>📂 Projects</h2>
-    <div class="project">
-      <h3>🔧 CI/CD Pipeline with Jenkins and Docker</h3>
-      <p>Set up a Jenkins pipeline to automatically build and deploy a Node.js application in a Docker container.</p>
-      <a href="#">🔗 GitHub Repo</a>
-    </div>
-    <div class="project">
-      <h3>☁️ Deploying on AWS with Terraform</h3>
-      <p>Automated provisioning of EC2, S3, and networking using Infrastructure as Code.</p>
-    </div>
-    <div class="project">
-      <h3>☸️ Kubernetes Deployment</h3>
-      <p>Deployed a microservice app on a local Kubernetes cluster using Helm charts and autoscaling.</p>
-    </div>
-  </section>
+<section>
+  <h2>🧰 Skills</h2>
+  <ul>
+    <li><strong>DevOps Tools:</strong> Git, Jenkins, Docker 🐳, Kubernetes ☸️, Ansible, Terraform</li>
+    <li><strong>Cloud:</strong> AWS ☁️, GCP, Azure</li>
+    <li><strong>Languages:</strong> Python 🐍, Bash 🐚, YAML</li>
+    <li><strong>Monitoring:</strong> Prometheus 📊, Grafana 📈, ELK Stack</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>📜 Certifications</h2>
-    <div class="certification">📘 AWS Certified Cloud Practitioner</div>
-    <div class="certification">📗 CKA - Certified Kubernetes Administrator</div>
-    <div class="certification">📙 Terraform Associate</div>
-    <div class="certification">📕 Docker Certified Associate</div>
-  </section>
+<section>
+  <h2>📂 Projects</h2>
+  <div class="card">
+    <h3>CI/CD Pipeline with Jenkins & Docker</h3>
+    <p>Built an end-to-end Jenkins pipeline to build, test, and deploy a Node.js app into a Docker container.</p>
+    <a href="#">🔗 View on GitHub</a>
+  </div>
+  <div class="card">
+    <h3>Kubernetes Microservices Deployment</h3>
+    <p>Used Helm to deploy multiple services on Minikube with autoscaling and monitoring dashboards.</p>
+  </div>
+  <div class="card">
+    <h3>Terraform + AWS: Infrastructure as Code</h3>
+    <p>Provisioned EC2, S3, and IAM roles using Terraform scripts. Emphasized modular design.</p>
+  </div>
+</section>
 
-  <section>
-    <h2>📄 Resume</h2>
-    <p><a href="#">⬇️ Download PDF</a></p>
-  </section>
+<section>
+  <h2>📜 Certifications</h2>
+  <div class="card">📘 AWS Certified Cloud Practitioner</div>
+  <div class="card">📗 Certified Kubernetes Administrator (CKA)</div>
+  <div class="card">📙 Terraform Associate</div>
+  <div class="card">📕 Docker Certified Associate</div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-  </footer>
+<section>
+  <h2>📞 Contact</h2>
+  <p>Open to internships and DevOps roles. Feel free to reach out!</p>
+  <ul>
+    <li>Email: <a href="mailto:email@example.com">email@example.com</a></li>
+    <li>LinkedIn: <a href="#">linkedin.com/in/yourname</a></li>
+    <li>GitHub: <a href="#">github.com/yourusername</a></li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 [Your Name] • Built with ❤️ and YAML
+</footer>
+
 </body>
 </html>
+
+  
+    
+      
+    
 
 
