@@ -67,7 +67,11 @@ blockquote {
 }
 
 .project {
+  padding: 15px;
+  border-left: 3px solid #e91e63;
+  background: #fafafa;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 footer {
