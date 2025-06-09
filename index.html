@@ -1,59 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sonali Rangampally – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #1f3b73;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h2 {
+      color: #1f3b73;
+    }
+    .project, .certification {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    a {
+      color: #1f3b73;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1f3b73;
+      color: white;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Sonali Rangampally</h1>
-    <p>🚀 I build intelligent systems, empower real-world safety, and make data human.</p>
-    <div class="contact">
-      📍 Long Beach, CA | 📧 rangampallysonali@gmail.com |
-      <a href="https://linkedin.com/in/sonali-rangampally-a35813221" target="_blank">LinkedIn</a> •
-      <a href="https://github.com/sonalirangampally" target="_blank">GitHub</a>
-    </div>
+    <h1>Hi, I'm [Your Name] 👋</h1>
+    <p>Aspiring DevOps Engineer | Passionate about Automation, CI/CD & Cloud</p>
+    <p>📍 Location | 📧 email@example.com | <a href="#">LinkedIn</a> • <a href="#">GitHub</a> • <a href="#">Resume</a></p>
   </header>
 
-  <section class="intro">
-    <blockquote>
-      “I don’t just write code. I build solutions that save lives, automate impact, and elevate user experiences.”
-    </blockquote>
-    <p class="brand">A machine learning enthusiast with a passion for ethical AI, practical applications, and user-first thinking.</p>
-  </section>
-
   <section>
-    <h2>🎓 Education</h2>
+    <h2>Skills</h2>
     <ul>
-      <li><strong>M.S. in Computer Science</strong>, CSU Dominguez Hills – 2024–2026<br>
-      Focus: AI, Cloud, System Design</li>
-      <li><strong>B.Tech in CS</strong>, India – 2019–2023</li>
+      <li><strong>DevOps Tools:</strong> Git, Jenkins, Docker, Kubernetes, Ansible, Terraform</li>
+      <li><strong>Cloud:</strong> AWS, Azure, GCP</li>
+      <li><strong>Languages:</strong> Bash, Python, YAML</li>
+      <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK Stack</li>
     </ul>
   </section>
 
   <section>
-    <h2>🧠 Skills</h2>
-    <ul class="skills">
-      <li>Machine Learning (Naive Bayes, Regression, NLP)</li>
-      <li>AWS & Azure Fundamentals</li>
-      <li>Linux, Python, Git, CI/CD, Docker</li>
-      <li>Web Dev (HTML, CSS, JS basics)</li>
-    </ul>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>CI/CD Pipeline with Jenkins and Docker</h3>
+      <p>Set up a Jenkins pipeline to automatically build and deploy a Node.js application in a Docker container.</p>
+      <a href="#">GitHub Repo</a>
+    </div>
+    <div class="project">
+      <h3>Deploying on AWS with Terraform</h3>
+      <p>Automated provisioning of EC2, S3, and networking using Infrastructure as Code.</p>
+    </div>
+    <div class="project">
+      <h3>Kubernetes Deployment</h3>
+      <p>Deployed a microservice app on a local Kubernetes cluster using Helm charts and autoscaling.</p>
+    </div>
   </section>
 
   <section>
-    <h2>💼 Projects</h2>
-    <div class="project">
-      <h3>Nidar – Women Safety App</h3>
-      <p>Emergency alert system with real-time GPS tracking. Awarded Top 3 in innovation contest.</p>
-    </div>
-    <div class="project">
-      <h3>Sentiment Analysis Tool</h3>
-      <p>Built a text classification system using Naive Bayes to detect emotion in social media posts.</p>
-    </div>
-    <div class="project">
-      <h3>IoT Collision Detection</h3>
-      <p>Published paper using sensor
+    <h2>Certifications</h2>
+    <div class="certification">AWS Certified Cloud Practitioner</div>
+    <div class="certification">CKA - Certified Kubernetes Administrator</div>
+    <div class="certification">Terraform Associate</div>
+    <div class="certification">Docker Certified Associate</div>
+  </section>
+
+  <section>
+    <h2>Resume</h2>
+    <p><a href="#">Download PDF</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
