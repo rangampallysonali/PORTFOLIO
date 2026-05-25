@@ -1,321 +1,337 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sonali Rangampally | DevOps Engineer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
     }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #050816;
-      color: #ffffff;
-      line-height: 1.7;
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#050816;
+      color:white;
+      line-height:1.7;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    a{
+      text-decoration:none;
+      color:inherit;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
     }
 
     /* NAVBAR */
 
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5, 8, 22, 0.9);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      z-index:1000;
+      background:rgba(5,8,22,0.85);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,0.08);
     }
 
-    .nav-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 0;
+    .nav-content{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:1rem 0;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #915eff;
+    .logo{
+      font-size:1.7rem;
+      font-weight:700;
+      color:#8b5cf6;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
+    .nav-links{
+      display:flex;
+      gap:2rem;
     }
 
-    .nav-links a {
-      color: #fff;
-      transition: 0.3s;
-      font-size: 0.95rem;
+    .nav-links a{
+      color:white;
+      transition:0.3s;
+      font-size:0.95rem;
     }
 
-    .nav-links a:hover {
-      color: #915eff;
+    .nav-links a:hover{
+      color:#8b5cf6;
     }
 
     /* HERO */
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
+    .hero{
+      min-height:100vh;
+
       background:
-      radial-gradient(circle at top right, rgba(145,94,255,0.3), transparent 30%),
-      #050816;
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)),
+      url("https://raw.githubusercontent.com/rangampallysonali/PORTFOLIO/main/profile.jpeg");
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+
+      padding:2rem;
     }
 
-    .hero-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      align-items: center;
-      gap: 4rem;
+    .hero-content{
+      width:100%;
     }
 
-    .hero-text h1 {
-      font-size: 4rem;
-      line-height: 1.1;
-      margin-bottom: 1rem;
+    .intro-text{
+      letter-spacing:10px;
+      text-transform:uppercase;
+      color:#d1d5db;
+      margin-bottom:1rem;
+      font-size:1rem;
     }
 
-    .hero-text span {
-      color: #915eff;
+    .hero h1{
+      font-size:5rem;
+      font-weight:300;
+      color:#dbeafe;
+      margin-bottom:1rem;
     }
 
-    .hero-text p {
-      color: #aaa6c3;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
+    .role-text{
+      letter-spacing:8px;
+      text-transform:uppercase;
+      color:#d1d5db;
+      font-size:1rem;
+      margin-bottom:2.5rem;
     }
 
-    .btn-group {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+    .btn-group{
+      display:flex;
+      justify-content:center;
+      gap:1.5rem;
+      flex-wrap:wrap;
     }
 
-    .btn {
-      padding: 0.9rem 1.8rem;
-      border-radius: 12px;
-      font-weight: 600;
-      transition: 0.3s;
-      display: inline-block;
+    .btn{
+      padding:1rem 2.5rem;
+      border-radius:50px;
+      font-weight:600;
+      letter-spacing:1px;
+      transition:0.3s;
+      display:inline-block;
     }
 
-    .btn-primary {
-      background: #915eff;
-      color: #fff;
+    .btn-primary{
+      background:#2563eb;
+      color:white;
     }
 
-    .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(145,94,255,0.4);
+    .btn-primary:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 20px rgba(37,99,235,0.4);
     }
 
-    .btn-outline {
-      border: 1px solid #915eff;
-      color: #915eff;
+    .btn-outline{
+      border:2px solid #60a5fa;
+      color:#fff;
     }
 
-    .btn-outline:hover {
-      background: #915eff;
-      color: #fff;
-    }
-
-    .hero-image {
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-image img {
-      width: 320px;
-      border-radius: 30px;
-      border: 4px solid #915eff;
-      box-shadow: 0 0 40px rgba(145,94,255,0.5);
+    .btn-outline:hover{
+      background:#2563eb;
+      border-color:#2563eb;
     }
 
     /* SECTIONS */
 
-    section {
-      padding: 6rem 0;
+    section{
+      padding:6rem 0;
     }
 
-    .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
+    .section-title{
+      text-align:center;
+      font-size:2.8rem;
+      margin-bottom:1rem;
     }
 
-    .section-subtitle {
-      text-align: center;
-      color: #aaa6c3;
-      margin-bottom: 4rem;
+    .section-subtitle{
+      text-align:center;
+      color:#9ca3af;
+      margin-bottom:4rem;
     }
 
     /* ABOUT */
 
-    .about-box {
-      background: #111827;
-      padding: 2rem;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.08);
+    .about-box{
+      background:#111827;
+      padding:2rem;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,0.06);
     }
 
     /* SKILLS */
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:1.5rem;
     }
 
-    .skill-card {
-      background: #111827;
-      padding: 1.5rem;
-      border-radius: 18px;
-      text-align: center;
-      transition: 0.3s;
-      border: 1px solid rgba(255,255,255,0.06);
+    .skill-card{
+      background:#111827;
+      padding:2rem;
+      border-radius:20px;
+      text-align:center;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.06);
     }
 
-    .skill-card:hover {
-      transform: translateY(-8px);
-      border-color: #915eff;
+    .skill-card:hover{
+      transform:translateY(-8px);
+      border-color:#8b5cf6;
     }
 
-    .skill-card h3 {
-      color: #915eff;
-      margin-bottom: 0.5rem;
+    .skill-card h3{
+      color:#8b5cf6;
+      margin-bottom:0.5rem;
     }
 
     /* PROJECTS */
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:2rem;
     }
 
-    .project-card {
-      background: #111827;
-      border-radius: 20px;
-      overflow: hidden;
-      transition: 0.3s;
-      border: 1px solid rgba(255,255,255,0.08);
+    .project-card{
+      background:#111827;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.06);
     }
 
-    .project-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    .project-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 15px 30px rgba(0,0,0,0.3);
     }
 
-    .project-content {
-      padding: 2rem;
+    .project-content{
+      padding:2rem;
     }
 
-    .project-content h3 {
-      margin-bottom: 1rem;
-      color: #915eff;
+    .project-content h3{
+      color:#8b5cf6;
+      margin-bottom:1rem;
     }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin: 1rem 0;
+    .tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem;
+      margin:1rem 0;
     }
 
-    .tag {
-      background: rgba(145,94,255,0.15);
-      color: #c4b5fd;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
+    .tag{
+      background:rgba(139,92,246,0.15);
+      color:#c4b5fd;
+      padding:0.4rem 0.8rem;
+      border-radius:999px;
+      font-size:0.8rem;
     }
 
     /* EXPERIENCE */
 
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+    .timeline{
+      display:flex;
+      flex-direction:column;
+      gap:2rem;
     }
 
-    .timeline-card {
-      background: #111827;
-      padding: 2rem;
-      border-left: 4px solid #915eff;
-      border-radius: 14px;
+    .timeline-card{
+      background:#111827;
+      padding:2rem;
+      border-left:4px solid #8b5cf6;
+      border-radius:14px;
     }
 
-    .timeline-card h3 {
-      color: #915eff;
-      margin-bottom: 0.5rem;
+    .timeline-card h3{
+      color:#8b5cf6;
+      margin-bottom:0.5rem;
     }
 
     /* CONTACT */
 
-    .contact-box {
-      text-align: center;
-      background: #111827;
-      padding: 3rem;
-      border-radius: 20px;
+    .contact-box{
+      background:#111827;
+      padding:3rem;
+      border-radius:20px;
+      text-align:center;
     }
 
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 2rem;
+    .contact-links{
+      display:flex;
+      justify-content:center;
+      gap:1rem;
+      flex-wrap:wrap;
+      margin-top:2rem;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #aaa6c3;
+    footer{
+      text-align:center;
+      padding:2rem;
+      color:#9ca3af;
     }
 
-    @media(max-width: 768px) {
-      .hero-text h1 {
-        font-size: 2.8rem;
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:3rem;
       }
 
-      .nav-links {
-        display: none;
+      .intro-text,
+      .role-text{
+        letter-spacing:4px;
       }
+
+      .nav-links{
+        display:none;
+      }
+
     }
 
   </style>
 </head>
+
 <body>
 
   <!-- NAVBAR -->
 
   <nav>
     <div class="container nav-content">
+
       <div class="logo">Sonali.</div>
 
       <div class="nav-links">
@@ -325,72 +341,95 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </div>
+
     </div>
   </nav>
 
   <!-- HERO -->
 
   <section class="hero">
-    <div class="container hero-content">
 
-      <div class="hero-text">
-        <h1>Hi, I'm <span>Sonali Rangampally</span></h1>
+    <div class="hero-content">
 
-        <p>
-          Aspiring DevOps Engineer passionate about cloud infrastructure,
-          CI/CD automation, Docker, Kubernetes, AWS, and scalable backend systems.
-        </p>
+      <p class="intro-text">HELLO, I AM</p>
 
-        <div class="btn-group">
-          <a href="https://github.com/rangampallysonali" target="_blank" class="btn btn-primary">GitHub</a>
+      <h1>Sonali Rangampally</h1>
 
-          <a href="https://www.linkedin.com/in/sonali-rangampally-a35813221" target="_blank" class="btn btn-outline">LinkedIn</a>
+      <p class="role-text">
+        ASPIRING DEVOPS ENGINEER
+      </p>
 
-          <a href="mailto:rangampallysonali@gmail.com" class="btn btn-outline">Email Me</a>
-        </div>
-      </div>
+      <div class="btn-group">
 
-      <div class="hero-image">
-        <img src="https://raw.githubusercontent.com/rangampallysonali/PORTFOLIO/main/profile.jpeg" alt="profile">
+        <a href="#projects" class="btn btn-primary">
+          VIEW MY WORK
+        </a>
+
+        <a href="Sonali_Rangampally_Resume.pdf"
+           target="_blank"
+           class="btn btn-outline">
+
+          DOWNLOAD CV
+
+        </a>
+
+        <a href="#contact" class="btn btn-primary">
+          WANNA CONNECT?
+        </a>
+
       </div>
 
     </div>
+
   </section>
 
   <!-- ABOUT -->
 
   <section id="about">
+
     <div class="container">
 
       <h2 class="section-title">About Me</h2>
-      <p class="section-subtitle">Who I am and what I do</p>
+
+      <p class="section-subtitle">
+        Who I am and what I do
+      </p>
 
       <div class="about-box">
+
         <p>
           I’m a Computer Science graduate student at California State University,
-          Dominguez Hills, graduating in May 2026.
-          I specialize in DevOps, cloud engineering, backend systems,
-          and infrastructure automation.
+          Dominguez Hills graduating in May 2026.
+          I specialize in DevOps, cloud engineering,
+          backend systems, and infrastructure automation.
         </p>
 
         <br>
 
         <p>
-          I enjoy building scalable applications, automating workflows,
-          deploying containerized systems, and learning modern cloud-native technologies.
+          I enjoy building scalable applications,
+          automating workflows,
+          deploying containerized systems,
+          and learning modern cloud-native technologies.
         </p>
+
       </div>
 
     </div>
+
   </section>
 
   <!-- SKILLS -->
 
   <section id="skills">
+
     <div class="container">
 
       <h2 class="section-title">Skills</h2>
-      <p class="section-subtitle">Technologies I work with</p>
+
+      <p class="section-subtitle">
+        Technologies I work with
+      </p>
 
       <div class="skills-grid">
 
@@ -427,140 +466,230 @@
       </div>
 
     </div>
+
   </section>
 
   <!-- PROJECTS -->
 
   <section id="projects">
+
     <div class="container">
 
       <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">Some things I’ve built</p>
+
+      <p class="section-subtitle">
+        Some things I’ve built
+      </p>
 
       <div class="projects-grid">
 
         <div class="project-card">
+
           <div class="project-content">
 
             <h3>🚀 Task Manager API with CI/CD & AWS</h3>
 
             <p>
-              Built and deployed a containerized REST API using Node.js,
-              Docker, MongoDB Atlas, GitHub Actions, and AWS EC2.
+              Built and deployed a containerized REST API using
+              Node.js, Docker, MongoDB Atlas,
+              GitHub Actions, and AWS EC2.
             </p>
 
             <div class="tags">
+
               <span class="tag">Node.js</span>
               <span class="tag">Docker</span>
               <span class="tag">AWS</span>
               <span class="tag">MongoDB</span>
               <span class="tag">CI/CD</span>
+
             </div>
 
-            <a href="https://github.com/rangampallysonali/task-manager-devops" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/rangampallysonali/task-manager-devops"
+               target="_blank"
+               class="btn btn-primary">
+
+              View Project
+
+            </a>
 
           </div>
+
         </div>
 
         <div class="project-card">
+
           <div class="project-content">
 
             <h3>☸️ Kubernetes Deployment</h3>
 
             <p>
-              Deployed Dockerized applications using Kubernetes deployments,
-              services, and container orchestration principles.
+              Deployed Dockerized applications using Kubernetes
+              deployments and services.
             </p>
 
             <div class="tags">
+
               <span class="tag">Kubernetes</span>
               <span class="tag">Docker</span>
               <span class="tag">DevOps</span>
+
             </div>
 
-            <a href="https://github.com/rangampallysonali" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/rangampallysonali"
+               target="_blank"
+               class="btn btn-primary">
+
+              View Project
+
+            </a>
 
           </div>
+
         </div>
 
         <div class="project-card">
+
           <div class="project-content">
 
             <h3>⚙️ Jenkins CI/CD Pipeline</h3>
 
             <p>
-              Automated build, testing, and deployment workflows using Jenkins,
-              Maven, GitHub webhooks, and Docker.
+              Automated build, testing,
+              and deployment workflows using Jenkins,
+              Maven, Docker, and GitHub webhooks.
             </p>
 
             <div class="tags">
+
               <span class="tag">Jenkins</span>
               <span class="tag">Docker</span>
               <span class="tag">CI/CD</span>
+
             </div>
 
-            <a href="https://github.com/rangampallysonali/armstrong" target="_blank" class="btn btn-primary">View Project</a>
+            <a href="https://github.com/rangampallysonali/armstrong"
+               target="_blank"
+               class="btn btn-primary">
+
+              View Project
+
+            </a>
 
           </div>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
   <!-- EXPERIENCE -->
 
   <section id="experience">
+
     <div class="container">
 
       <h2 class="section-title">Experience</h2>
-      <p class="section-subtitle">My professional journey</p>
+
+      <p class="section-subtitle">
+        My professional journey
+      </p>
 
       <div class="timeline">
 
-        
         <div class="timeline-card">
+
+          <h3>DevOps Intern</h3>
+
+          <p>
+            <strong>Capstone Project</strong>
+            | Jun 2023 - Sept 2023
+          </p>
+
+          <br>
+
+          <p>
+            Built CI/CD pipelines using Jenkins,
+            Docker, GitHub, and SonarQube while deploying
+            applications in containerized environments.
+          </p>
+
+        </div>
+
+        <div class="timeline-card">
+
           <h3>AWS Machine Learning Intern</h3>
-          <p><strong>AWS Training Program</strong> | Jan 2021 - Apr 2021</p>
+
+          <p>
+            <strong>AWS Training Program</strong>
+            | Jan 2021 - Apr 2021
+          </p>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
   <!-- CONTACT -->
 
   <section id="contact">
+
     <div class="container">
 
       <div class="contact-box">
 
-        <h2 class="section-title">Let's Connect</h2>
+        <h2 class="section-title">
+          Let's Connect
+        </h2>
 
         <p>
-          I’m actively looking for DevOps, Cloud,
-          and Software Engineering opportunities.
+          I’m actively looking for DevOps,
+          Cloud, and Software Engineering opportunities.
         </p>
 
         <div class="contact-links">
 
-          <a href="mailto:rangampallysonali@gmail.com" class="btn btn-primary">Email</a>
+          <a href="mailto:rangampallysonali@gmail.com"
+             class="btn btn-primary">
 
-          <a href="https://github.com/rangampallysonali" target="_blank" class="btn btn-outline">GitHub</a>
+            Email
 
-          <a href="https://www.linkedin.com/in/sonali-rangampally-a35813221" target="_blank" class="btn btn-outline">LinkedIn</a>
+          </a>
+
+          <a href="https://github.com/rangampallysonali"
+             target="_blank"
+             class="btn btn-outline">
+
+            GitHub
+
+          </a>
+
+          <a href="https://www.linkedin.com/in/sonali-rangampally-a35813221"
+             target="_blank"
+             class="btn btn-outline">
+
+            LinkedIn
+
+          </a>
 
         </div>
 
       </div>
 
     </div>
+
   </section>
 
   <footer>
-    <p>© 2026 Sonali Rangampally • Built with ❤️ and Passion</p>
+    <p>
+      © 2026 Sonali Rangampally • Built with ❤️ and Passion
+    </p>
   </footer>
 
 </body>
